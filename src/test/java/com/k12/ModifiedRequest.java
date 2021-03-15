@@ -9,7 +9,7 @@ public class ModifiedRequest {
     @Test
     public void modifyRequests() {
         final AutomatedBrowser automatedBrowser =
-                AUTOMATED_BROWSER_FACTORY.getAutomatedBrowser("Firefox");
+                AUTOMATED_BROWSER_FACTORY.getAutomatedBrowser("SeleniumGridFirefox");
         try {
             automatedBrowser.init();
             automatedBrowser.captureHarFile();

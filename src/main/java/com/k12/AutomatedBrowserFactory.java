@@ -45,8 +45,58 @@ public class AutomatedBrowserFactory {
             return getBrowserStackAndroidNoImplicitWait();
         }
 
+        if ("SeleniumGridChrome".equalsIgnoreCase(browser)) {
+            return getSeleniumGridChrome();
+        }
+
+        if ("SeleniumGridChromeNoImplicitWait".equalsIgnoreCase(browser)) {
+            return getSeleniumGridChromeNoImplicitWait();
+        }
+
+        if ("SeleniumGridFirefox".equalsIgnoreCase(browser)) {
+            return getSeleniumGridFirefox();
+        }
+
+        if ("SeleniumGridFirefoxNoImplicitWait".equalsIgnoreCase(browser)) {
+            return getSeleniumGridFirefoxNoImplicitWait();
+        }
         throw new IllegalArgumentException("Unknown browser " + browser);
 
+    }
+    private AutomatedBrowser getSeleniumGridFirefox() {
+        return new SeleniumGridDecorator(
+                new SeleniumGridFirefoxDecorator(
+                        new ImplicitWaitDecorator(10,
+                                new WebDriverDecorator()
+                        )
+                )
+        );
+    }
+
+    private AutomatedBrowser getSeleniumGridFirefoxNoImplicitWait() {
+        return new SeleniumGridDecorator(
+                new SeleniumGridFirefoxDecorator(
+                        new WebDriverDecorator()
+                )
+        );
+    }
+
+    private AutomatedBrowser getSeleniumGridChrome() {
+        return new SeleniumGridDecorator(
+                new SeleniumGridChromeDecorator(
+                        new ImplicitWaitDecorator(10,
+                                new WebDriverDecorator()
+                        )
+                )
+        );
+    }
+
+    private AutomatedBrowser getSeleniumGridChromeNoImplicitWait() {
+        return new SeleniumGridDecorator(
+                new SeleniumGridChromeDecorator(
+                        new WebDriverDecorator()
+                )
+        );
     }
 
     private AutomatedBrowser getChromeBrowserNoImplicitWait() {
