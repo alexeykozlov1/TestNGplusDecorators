@@ -45,14 +45,11 @@ public class InitialTest {
 
         try {
             automatedBrowser.init();
-            automatedBrowser.captureHarFile();
             automatedBrowser.goTo("https://ipublicmarketing.s3.amazonaws.com/form.html");
         } finally {
-            try {
-                automatedBrowser.saveHarFile("test.har");
-            } finally {
+
                 automatedBrowser.destroy();
             }
         }
-    }
+
 }

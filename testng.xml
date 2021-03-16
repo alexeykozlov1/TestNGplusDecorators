@@ -7,22 +7,17 @@
             <class name="com.k12.InitialTest"/>
         </classes>
     </test>
-    <test name="parameter-test1">
-        <parameter name="browser" value="SeleniumGridFirefox"/>
-        <classes>
-            <class name="com.k12.InitialTest"/>
-        </classes>
-    </test>
-    <test name="parameter-test2">
-        <parameter name="browser" value="SeleniumGridFirefox"/>
-        <classes>
-            <class name="com.k12.InitialTest"/>
-        </classes>
-    </test>
     <test name="parameter-test3">
         <parameter name="browser" value="SeleniumGridChrome"/>
         <classes>
             <class name="com.k12.InitialTest"/>
         </classes>
     </test>
+    <test name="parameter-test4">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+
 </suite>
