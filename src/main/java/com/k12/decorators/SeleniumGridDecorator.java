@@ -4,6 +4,7 @@ import com.k12.AutomatedBrowser;
 import com.k12.decoratorbase.AutomatedBrowserBase;
 import com.k12.exceptions.ConfigurationException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.LocalFileDetector;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
@@ -20,12 +21,19 @@ public class SeleniumGridDecorator extends AutomatedBrowserBase {
     @Override
     public void init() {
         try {
-            final String host="localhost";
+            String host="localhost";
+            if(System.getProperty("HUB_HOST")!= null){
+                host=System.getProperty("HUB_HOST");
+            }
             final String hub="4444/wd/hub";
             final String url = "http://" +
                     host + ":" + hub;
-            System.out.println(url);
-            final WebDriver webDriver = new RemoteWebDriver(new URL(url), getDesiredCapabilities());
+//            final WebDriver webDriver = new RemoteWebDriver(new URL(url), getDesiredCapabilities());
+//                ((RemoteWebDriver) webDriver).setFileDetector(new LocalFileDetector());
+
+            final RemoteWebDriver webDriver = new RemoteWebDriver(new URL(url), getDesiredCapabilities());
+            webDriver.setFileDetector(new LocalFileDetector());
+
             getAutomatedBrowser().setWebDriver(webDriver);
             getAutomatedBrowser().init();
         } catch (MalformedURLException ex) {
