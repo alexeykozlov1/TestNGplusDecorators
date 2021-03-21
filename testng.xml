@@ -8,7 +8,7 @@
         </classes>
     </test>
     <test name="parameter-test2">
-        <parameter name="browser" value="SeleniumGridFirefox"/>
+        <parameter name="browser" value="SeleniumGridChrome"/>
         <classes>
             <class name="com.k12.InitialTest"/>
         </classes>

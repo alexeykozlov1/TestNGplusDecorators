@@ -27,9 +27,6 @@ public class ForSeleniumGrid {
             automatedBrowser.populateElementWithId("text_element", "test text");
             assertEquals("Text Input Changed", automatedBrowser.getTextFromElementWithId("message"));
 
-            automatedBrowser.populateElementWithId("textarea_element", "test text");
-            assertEquals("Text Area Changed", automatedBrowser.getTextFromElementWithId("message"));
-
 
         } finally {
             automatedBrowser.destroy();
