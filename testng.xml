@@ -37,29 +37,5 @@
             <class name="com.k12.ForSeleniumGrid"/>
         </classes>
     </test>
-    <test name="parameter-test7">
-        <parameter name="browser" value="SeleniumGridChrome"/>
-        <classes>
-            <class name="com.k12.ForSeleniumGrid"/>
-        </classes>
-    </test>
-    <test name="parameter-test8">
-        <parameter name="browser" value="SeleniumGridChrome"/>
-        <classes>
-            <class name="com.k12.ForSeleniumGrid"/>
-        </classes>
-    </test>
-    <test name="parameter-test9">
-        <parameter name="browser" value="SeleniumGridChrome"/>
-        <classes>
-            <class name="com.k12.ForSeleniumGrid"/>
-        </classes>
-    </test>
-    <test name="parameter-test10">
-        <parameter name="browser" value="SeleniumGridChrome"/>
-        <classes>
-            <class name="com.k12.ForSeleniumGrid"/>
-        </classes>
-    </test>
 
 </suite>
