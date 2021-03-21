@@ -19,6 +19,9 @@ public class ForSeleniumGrid {
                 AUTOMATED_BROWSER_FACTORY.getAutomatedBrowser(browser);
 
         try {
+            automatedBrowser.init();
+            automatedBrowser.goTo("https://ipublicmarketing.s3.amazonaws.com/form.html");
+
             automatedBrowser.clickElementWithId("button_element");
             assertEquals("Button Clicked", automatedBrowser.getTextFromElementWithId("message"));
             automatedBrowser.populateElementWithId("text_element", "test text");
