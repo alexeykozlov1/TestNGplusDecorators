@@ -16,10 +16,11 @@ public class SeleniumGridChromeDecorator extends AutomatedBrowserBase {
     public DesiredCapabilities getDesiredCapabilities() {
         final DesiredCapabilities caps = DesiredCapabilities.chrome();
         ChromeOptions options = new ChromeOptions();
-        options.merge(caps);
-//        caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-//        caps.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
+
+        caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+        caps.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
 //        caps.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+        options.merge(caps);
         return caps;
     }
 }
