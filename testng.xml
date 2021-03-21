@@ -25,17 +25,6 @@
             <class name="com.k12.ForSeleniumGrid"/>
         </classes>
     </test>
-    <test name="parameter-test5">
-        <parameter name="browser" value="SeleniumGridChrome"/>
-        <classes>
-            <class name="com.k12.ForSeleniumGrid"/>
-        </classes>
-    </test>
-    <test name="parameter-test6">
-        <parameter name="browser" value="SeleniumGridChrome"/>
-        <classes>
-            <class name="com.k12.ForSeleniumGrid"/>
-        </classes>
-    </test>
+
 
 </suite>
