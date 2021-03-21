@@ -14,8 +14,8 @@ public class SeleniumGridChromeDecorator extends AutomatedBrowserBase {
     @Override
     public DesiredCapabilities getDesiredCapabilities() {
         final DesiredCapabilities caps = DesiredCapabilities.chrome();
-        caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-        caps.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
+//        caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+//        caps.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
         return caps;
     }
 }
