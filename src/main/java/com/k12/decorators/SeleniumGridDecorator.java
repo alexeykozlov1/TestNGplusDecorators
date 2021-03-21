@@ -4,6 +4,7 @@ import com.k12.AutomatedBrowser;
 import com.k12.decoratorbase.AutomatedBrowserBase;
 import com.k12.exceptions.ConfigurationException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.LocalFileDetector;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -31,7 +32,8 @@ public class SeleniumGridDecorator extends AutomatedBrowserBase {
 //            final WebDriver webDriver = new RemoteWebDriver(new URL(url), getDesiredCapabilities());
 //                ((RemoteWebDriver) webDriver).setFileDetector(new LocalFileDetector());
 
-            final RemoteWebDriver webDriver = new RemoteWebDriver(new URL(url), getDesiredCapabilities());
+            DesiredCapabilities dc = DesiredCapabilities.chrome();
+            final RemoteWebDriver webDriver = new RemoteWebDriver(new URL(url), dc);
             webDriver.setFileDetector(new LocalFileDetector());
 
             getAutomatedBrowser().setWebDriver(webDriver);
