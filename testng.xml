@@ -482,6 +482,126 @@
             <class name="com.k12.ForSeleniumGrid"/>
         </classes>
     </test>
+    <test name="parameter-test81">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test82">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test83">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test84">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test85">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test86">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test87">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test88">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test89">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test90">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test91">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test92">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test93">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test94">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test95">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test96">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test97">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test98">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test99">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
+    <test name="parameter-test100">
+        <parameter name="browser" value="SeleniumGridChrome"/>
+        <classes>
+            <class name="com.k12.ForSeleniumGrid"/>
+        </classes>
+    </test>
 
 
 </suite>
